@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import HomeButton from "../components/homeButton";
+import MenuButton from "../components/menuButton";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       </Head>
 
       <main>
+        <HomeButton />
+        <MenuButton />
         <h1 className={styles.title}>Hello</h1>
 
         <p className={styles.description}>
