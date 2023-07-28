@@ -1,8 +1,12 @@
 import Link from "next/link";
+import HomeButton from "../components/homeButton";
+import MenuButton from "../components/menuButton";
 
 export default function Portfolio() {
   return (
     <main>
+      <HomeButton />
+      <MenuButton />
       <div>
         <img
           src="/images/placeholder.png"
@@ -19,7 +23,8 @@ export default function Portfolio() {
         main {
           display: grid;
           place-content: center;
-          max-height: 100vh;
+          background-color: rgb(12, 12, 26);
+          color: white;
         }
       `}</style>
     </main>
