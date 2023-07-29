@@ -1,12 +1,12 @@
 import HomeButton from "../components/homeButton";
-import MenuButton from "../components/menuButton";
+import Menu from "../components/menu";
 import styles from "../styles/Portfolio.module.css";
 
 export default function Portfolio() {
   return (
     <div>
       <HomeButton />
-      <MenuButton />
+      <Menu />
       <div className={styles.container}>
         <div>
           <img

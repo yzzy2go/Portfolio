@@ -1,13 +1,13 @@
 import Link from "next/link";
 import HomeButton from "../components/homeButton";
-import MenuButton from "../components/menuButton";
+import Menu from "../components/menu";
 import styles from "../styles/Contact.module.css";
 
 export default function Contact() {
   return (
     <>
       <HomeButton />
-      <MenuButton />
+      <Menu />
       <div className={styles.container}>
         <h1>Contact</h1>
         <hr className={styles.hr} />

@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import HomeButton from "../components/homeButton";
-import MenuButton from "../components/menuButton";
+import Menu from "../components/menu";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
 
       <div className={styles.main}>
         <HomeButton />
-        <MenuButton />
+        <Menu />
         <h1 className={styles.title}>Hello</h1>
 
         <p className={styles.description}>
