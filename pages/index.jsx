@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div className={styles.main}>
         <HomeButton />
         <MenuButton />
         <h1 className={styles.title}>Hello</h1>
@@ -32,34 +32,7 @@ export default function Home() {
             <Link href="/contact">Contact</Link>
           </h2>
         </div>
-      </main>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          color: #ffffff;
-          background-color: rgb(12, 12, 26);
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      </div>
     </div>
   );
 }

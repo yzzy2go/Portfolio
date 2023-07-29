@@ -3,7 +3,7 @@ import MenuButton from "../components/menuButton";
 
 export default function Portfolio() {
   return (
-    <main>
+    <div style={{ display: "grid", placeContent: "center" }}>
       <HomeButton />
       <MenuButton />
       {/* weirdge translation */}
@@ -16,29 +16,6 @@ export default function Portfolio() {
           <h1>First Post</h1>
         </div>
       </div>
-      <style jsx>{`
-        main {
-          display: grid;
-          place-content: center;
-          background-color: rgb(12, 12, 26);
-          color: white;
-        }
-      `}</style>
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          color: #ffffff;
-          background-color: rgb(12, 12, 26);
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </main>
+    </div>
   );
 }
