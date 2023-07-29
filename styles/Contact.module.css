@@ -1,0 +1,15 @@
+.container {
+  margin: 10em 12em;
+  min-width: 60vw;
+}
+
+.hr {
+  height: 3px;
+  background: grey;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

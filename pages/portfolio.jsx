@@ -1,12 +1,53 @@
-import Link from "next/link";
+import HomeButton from "../components/homeButton";
+import Menu from "../components/menu";
+import styles from "../styles/Portfolio.module.css";
 
 export default function Portfolio() {
   return (
-    <>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
-    </>
+    <div>
+      <HomeButton />
+      <Menu />
+      <div className={styles.container}>
+        <div>
+          <img
+            src="/images/placeholder.png"
+            style={{
+              width: "32vw",
+              display: "inline-block",
+              verticalAlign: "top",
+            }}
+          ></img>
+          <div
+            style={{
+              display: "inline-block",
+              minWidth: "30vw",
+              marginLeft: "6rem",
+            }}
+          >
+            <h1>Projects</h1>
+            <hr className={styles.hr} />
+            <div className={styles.project}>
+              <h2>uwexplore</h2>
+              <h3>web</h3>
+            </div>
+            <hr className={styles.hr} />
+            <div className={styles.project}>
+              <h2>uwexplore</h2>
+              <h3>web</h3>
+            </div>
+            <hr className={styles.hr} />
+            <div className={styles.project}>
+              <h2>uwexplore</h2>
+              <h3>web</h3>
+            </div>
+            <hr className={styles.hr} />
+            <div className={styles.project}>
+              <h2>uwexplore</h2>
+              <h3>web</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

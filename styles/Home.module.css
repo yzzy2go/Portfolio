@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.title a {
+/* .title a {
   color: #0070f3;
   text-decoration: none;
 }
@@ -16,30 +16,31 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
+} */
 
 .title {
   margin: 0 0 1rem;
   line-height: 1.15;
   font-size: 3.6rem;
-}
-
-.title {
   text-align: center;
 }
+
+/* .title {
+  
+} */
 
 .title,
 .description {
   text-align: center;
+  cursor: default;
 }
-
 
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
-.grid {
+/* .grid {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,9 +48,9 @@
 
   max-width: 800px;
   margin-top: 3rem;
-}
+} */
 
-.card {
+/* .card {
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -81,11 +82,20 @@
 
 .logo {
   height: 1em;
-}
+} */
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
