@@ -14,17 +14,19 @@ export default function Contact() {
 
         {/* todo: fix the resizing issue */}
         <div className={styles.links}>
-          <div>
-            <h3 style={{ display: "inline-block" }}>email</h3>
-            <h2 style={{ display: "inline-block", marginLeft: "30px" }}>
+          <div style={{ marginRight: "2em" }}>
+            <h3 style={{ display: "inline" }}>email</h3>
+            <h2 style={{ display: "inline", marginLeft: "30px" }}>
               yzabelle.tgo@gmail.com
             </h2>
           </div>
 
           <div style={{ display: "grid", marginRight: "8em" }}>
             <div>
-              <h3 style={{ display: "inline-block" }}>socials</h3>
-              <div style={{ display: "inline-block", marginLeft: "30px" }}>
+              <h3 style={{ display: "inline", marginRight: "30px" }}>
+                socials
+              </h3>
+              <div style={{ display: "inline-block" }}>
                 <div style={{ display: "grid" }}>
                   <h2>LinkedIn</h2>
                   <h2>Github</h2>
@@ -33,11 +35,9 @@ export default function Contact() {
             </div>
 
             <div>
-              <h3 style={{ display: "inline-block" }}>other</h3>
+              <h3 style={{ display: "inline" }}>other</h3>
               {/* todo: sketchy marginLeft - not responsive? */}
-              <h2 style={{ display: "inline-block", marginLeft: "40px" }}>
-                Resume
-              </h2>
+              <h2 style={{ display: "inline", marginLeft: "40px" }}>Resume</h2>
             </div>
           </div>
         </div>

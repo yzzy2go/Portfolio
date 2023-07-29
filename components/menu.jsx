@@ -1,8 +1,18 @@
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import styles from "../styles/Menu.module.css";
 
 export default function MenuButton() {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+
+  // todo: is this necessary?
+  const closeMenu = (href) => {
+    if (router.pathname === href) {
+      setOpen(false);
+    }
+  };
 
   return (
     <div>
@@ -11,24 +21,38 @@ export default function MenuButton() {
         <img
           src="/images/menu.png"
           style={{ height: "2em" }}
-          // onClick={setOpen(true)}
           onClick={() => setOpen(true)}
         ></img>
       </div>
-      <overlay id="menu" style={{ display: open ? "block" : "none" }}>
-        <overlaycontent>
+      <div
+        className={styles.overlay}
+        id="menu"
+        style={{ display: open ? "block" : "none" }}
+      >
+        <div className={styles.overlaycontent}>
           <div>
-            <h2 style={{ marginRight: "20px" }}>
-              <Link href="/portfolio">Portfolio</Link>
-            </h2>
-            <h2 style={{ marginRight: "20px" }}>
-              <Link href="/experience">Experience</Link>
-            </h2>
-            <h2>
-              <Link href="/contact">Contact</Link>
-            </h2>
+            <h1 style={{ fontSize: "4rem" }}>
+              <Link href="/" onClick={() => closeMenu("/")}>
+                Home
+              </Link>
+            </h1>
+            <h1 style={{ fontSize: "4rem" }}>
+              <Link href="/portfolio" onClick={() => closeMenu("/portfolio")}>
+                Portfolio
+              </Link>
+            </h1>
+            <h1 style={{ fontSize: "4rem" }}>
+              <Link href="/experience" onClick={() => closeMenu("/experience")}>
+                Experience
+              </Link>
+            </h1>
+            <h1 style={{ fontSize: "4rem" }}>
+              <Link href="/contact" onClick={() => closeMenu("/contact")}>
+                Contact
+              </Link>
+            </h1>
           </div>
-        </overlaycontent>
+        </div>
         <img
           src="/images/menuClose.png"
           style={{
@@ -38,41 +62,9 @@ export default function MenuButton() {
             width: "2em",
           }}
           onClick={() => setOpen(false)}
+          className={styles.menuButton}
         />
-      </overlay>
-      <style jsx>
-        {`
-          img:hover {
-            cursor: pointer;
-          }
-          overlay {
-            /* Height & width depends on how you want to reveal the overlay (see JS below) */
-            /* height: 100%; */
-            /* width: 0; */
-            height: 100%;
-            width: 100%;
-            position: fixed; /* Stay in place */
-            z-index: 10; /* Sit on top */
-            left: 0;
-            top: 0;
-            background-color: rgba(100, 100, 100, 0.9);
-            /* background-color: rgb(0, 0, 0); /* Black fallback color */
-            /* background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
-            overflow-x: hidden; /* Disable horizontal scroll */
-            transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-          }
-
-          /* Position the content inside the overlay */
-          overlaycontent {
-            color: #ffffff;
-            position: relative;
-            top: 25%; /* 25% from the top */
-            width: 100%; /* 100% width */
-            text-align: center; /* Centered text/links */
-            margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-          }
-        `}
-      </style>
+      </div>
     </div>
   );
 }
