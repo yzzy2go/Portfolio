@@ -16,9 +16,11 @@ export default function Contact() {
         <div className={styles.links}>
           <div style={{ marginRight: "2em" }}>
             <h3 style={{ display: "inline" }}>email</h3>
-            <h2 style={{ display: "inline", marginLeft: "30px" }}>
-              yzabelle.tgo@gmail.com
-            </h2>
+            <Link href="mailto:yzabelle.tgo@gmail.com">
+              <h2 style={{ display: "inline", marginLeft: "30px" }}>
+                yzabelle.tgo@gmail.com
+              </h2>
+            </Link>
           </div>
 
           <div style={{ display: "grid", marginRight: "8em" }}>
@@ -27,17 +29,25 @@ export default function Contact() {
                 socials
               </h3>
               <div style={{ display: "inline-block" }}>
-                <div style={{ display: "grid" }}>
-                  <h2>LinkedIn</h2>
-                  <h2>Github</h2>
+                <div style={{ display: "grid", gridGap: "1em" }}>
+                  <Link href="https://www.linkedin.com/in/yzabelle-go/">
+                    <h2>LinkedIn</h2>
+                  </Link>
+                  <Link href="https://github.com/yzzy2go">
+                    <h2>Github</h2>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            <div>
+            <div style={{ marginTop: "1em" }}>
               <h3 style={{ display: "inline" }}>other</h3>
               {/* todo: sketchy marginLeft - not responsive? */}
-              <h2 style={{ display: "inline", marginLeft: "40px" }}>Resume</h2>
+              <Link href="Yzabelle_Go_resume.pdf" target="_blank">
+                <h2 style={{ display: "inline", marginLeft: "40px" }}>
+                  Resume
+                </h2>
+              </Link>
             </div>
           </div>
         </div>

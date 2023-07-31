@@ -15,17 +15,17 @@ export default function Home() {
       <div className={styles.main}>
         <HomeButton />
         <Menu />
-        <h1 className={styles.title}>Hello</h1>
+        <h1 className={styles.title}>Yzabelle Go</h1>
 
         <p className={styles.description}>
           Software Engineer, frontend developer. Looking for full-time
           opportunities.
         </p>
-        <div>
-          <h2 style={{ display: "inline-block", marginRight: "20px" }}>
+        <div style={{ marginTop: "2rem" }}>
+          <h2 style={{ display: "inline-block", marginRight: "4rem" }}>
             <Link href="/portfolio">Portfolio</Link>
           </h2>
-          <h2 style={{ display: "inline-block", marginRight: "20px" }}>
+          <h2 style={{ display: "inline-block", marginRight: "4rem" }}>
             <Link href="/experience">Experience</Link>
           </h2>
           <h2 style={{ display: "inline-block" }}>

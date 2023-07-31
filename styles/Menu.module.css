@@ -1,4 +1,5 @@
-.menuButton:hover {
+.menuButton:hover,
+.closeButton:hover {
   cursor: pointer;
 }
 .overlay {

@@ -25,14 +25,14 @@ export default function Portfolio() {
           <h3>web</h3>
         </div>
         {/* todo: Just use state to hide this? -> but want nice animation */}
-        <table
+        <div
           style={{
             maxWidth: "30vw",
-            visibility: projectOpen === name ? "visible" : "collapse",
+            display: projectOpen === name ? "block" : "none",
           }}
         >
           <p style={{ marginBottom: "1.5rem" }}>{description}</p>
-        </table>
+        </div>
       </div>
     );
   };

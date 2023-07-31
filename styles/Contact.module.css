@@ -6,10 +6,12 @@
 .hr {
   height: 3px;
   background: grey;
+  margin-top: 1em;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 1.5em;
 }

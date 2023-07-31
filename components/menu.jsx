@@ -22,6 +22,7 @@ export default function MenuButton() {
           src="/images/menu.png"
           style={{ height: "2em" }}
           onClick={() => setOpen(true)}
+          className={styles.menuButton}
         ></img>
       </div>
       <div
@@ -62,7 +63,7 @@ export default function MenuButton() {
             width: "2em",
           }}
           onClick={() => setOpen(false)}
-          className={styles.menuButton}
+          className={styles.closeButton}
         />
       </div>
     </div>
