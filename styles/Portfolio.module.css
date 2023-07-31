@@ -1,9 +1,7 @@
 .container {
-  min-height: 100vh;
-  padding: 0 2rem;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  top: 34vh;
+  left: 16vw;
+  position: absolute;
 }
 
 .project {

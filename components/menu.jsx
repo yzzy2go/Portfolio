@@ -36,17 +36,17 @@ export default function MenuButton() {
                 Home
               </Link>
             </h1>
-            <h1 style={{ fontSize: "4rem" }}>
+            <h1 style={{ fontSize: "4rem", marginTop: "2rem" }}>
               <Link href="/portfolio" onClick={() => closeMenu("/portfolio")}>
                 Portfolio
               </Link>
             </h1>
-            <h1 style={{ fontSize: "4rem" }}>
+            <h1 style={{ fontSize: "4rem", marginTop: "2rem" }}>
               <Link href="/experience" onClick={() => closeMenu("/experience")}>
                 Experience
               </Link>
             </h1>
-            <h1 style={{ fontSize: "4rem" }}>
+            <h1 style={{ fontSize: "4rem", marginTop: "2rem" }}>
               <Link href="/contact" onClick={() => closeMenu("/contact")}>
                 Contact
               </Link>
