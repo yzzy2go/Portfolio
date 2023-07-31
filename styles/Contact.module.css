@@ -1,5 +1,6 @@
 .container {
-  margin: 10em 12em;
+  padding: 10em 12em;
+  height: 100vh;
   min-width: 60vw;
 }
 

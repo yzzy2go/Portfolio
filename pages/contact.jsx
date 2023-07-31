@@ -5,7 +5,7 @@ import styles from "../styles/Contact.module.css";
 
 export default function Contact() {
   return (
-    <>
+    <div style={{ maxHeight: "100vh" }}>
       <HomeButton />
       <Menu />
       <div className={styles.container}>
@@ -52,6 +52,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

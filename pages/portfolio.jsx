@@ -38,7 +38,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <HomeButton />
       <Menu />
       <div className={styles.container}>
