@@ -14,18 +14,43 @@ export default function Portfolio() {
     }
   };
 
+  const renderProject = (name, description) => {
+    return (
+      <div>
+        <div className={styles.project}>
+          {/* todo: make a proper link, don't like how it highlights the word */}
+          <h2 onClick={() => closeProject(name)} style={{ cursor: "pointer" }}>
+            {name}
+          </h2>
+          <h3>web</h3>
+        </div>
+        {/* todo: Just use state to hide this? -> but want nice animation */}
+        <table
+          style={{
+            maxWidth: "30vw",
+            visibility: projectOpen === name ? "visible" : "collapse",
+          }}
+        >
+          <p style={{ marginBottom: "1.5rem" }}>{description}</p>
+        </table>
+      </div>
+    );
+  };
+
   return (
     <div>
       <HomeButton />
       <Menu />
       <div className={styles.container}>
         <div>
+          {/* todo: make this conditional when having more pics */}
           <img
             src="/images/placeholder.png"
             style={{
               width: "32vw",
               display: "inline-block",
               verticalAlign: "top",
+              visibility: projectOpen !== "" ? "visible" : "hidden",
             }}
           ></img>
           <div
@@ -38,111 +63,37 @@ export default function Portfolio() {
             <h1>Projects</h1>
             <hr className={styles.hr} />
 
-            {/* todo: make a reusable component/function! */}
-            <div className={styles.project}>
-              {/* todo: make a proper link, don't like how it highlights the word */}
-              <h2
-                onClick={() => closeProject("uwexplore")}
-                style={{ cursor: "pointer" }}
-              >
-                uwexplore
-              </h2>
-              <h3>web</h3>
-            </div>
-            {/* Just use state to hide this? -> but want nice animation */}
-            <table
-              style={{
-                maxWidth: "30vw",
-                visibility:
-                  projectOpen === "uwexplore" ? "visible" : "collapse",
-              }}
-            >
-              <p style={{ marginBottom: "1.5rem" }}>
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-              </p>
-            </table>
+            {renderProject(
+              "uwexplore",
+              `Hello! I am a description for a project. I should take up a couple
+            of lines and only appear when the title is clicked on! Hello! I am a
+            description for a project. I should take up a couple of lines and
+            only appear when the title is clicked on!`
+            )}
             <hr className={styles.hr} />
-
-            <div className={styles.project}>
-              {/* todo: make a proper link, don't like how it highlights the word */}
-              <h2
-                onClick={() => closeProject("uwexplor")}
-                style={{ cursor: "pointer" }}
-              >
-                uwexplor
-              </h2>
-              <h3>web</h3>
-            </div>
-            {/* Just use state to hide this? -> but want nice animation */}
-            <table
-              style={{
-                maxWidth: "30vw",
-                visibility: projectOpen === "uwexplor" ? "visible" : "collapse",
-              }}
-            >
-              <p style={{ marginBottom: "1.5rem" }}>
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-              </p>
-            </table>
+            {renderProject(
+              "uwexplor",
+              `Hello! I am a description for a project. I should take up a couple
+            of lines and only appear when the title is clicked on! Hello! I am a
+            description for a project. I should take up a couple of lines and
+            only appear when the title is clicked on!`
+            )}
             <hr className={styles.hr} />
-
-            <div className={styles.project}>
-              {/* todo: make a proper link, don't like how it highlights the word */}
-              <h2
-                onClick={() => closeProject("deliverydog")}
-                style={{ cursor: "pointer" }}
-              >
-                deliverydog
-              </h2>
-              <h3>web</h3>
-            </div>
-            {/* Just use state to hide this? -> but want nice animation */}
-            <table
-              style={{
-                maxWidth: "30vw",
-                visibility:
-                  projectOpen === "deliverydog" ? "visible" : "collapse",
-              }}
-            >
-              <p style={{ marginBottom: "1.5rem" }}>
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-              </p>
-            </table>
+            {renderProject(
+              "deliverydog",
+              `Hello! I am a description for a project. I should take up a couple
+            of lines and only appear when the title is clicked on! Hello! I am a
+            description for a project. I should take up a couple of lines and
+            only appear when the title is clicked on!`
+            )}
             <hr className={styles.hr} />
-            <div className={styles.project}>
-              {/* todo: make a proper link, don't like how it highlights the word */}
-              <h2
-                onClick={() => closeProject("spacestagram")}
-                style={{ cursor: "pointer" }}
-              >
-                spacestagram
-              </h2>
-              <h3>web</h3>
-            </div>
-            {/* Just use state to hide this? -> but want nice animation */}
-            <table
-              style={{
-                maxWidth: "30vw",
-                visibility:
-                  projectOpen === "spacestagram" ? "visible" : "collapse",
-              }}
-            >
-              <p style={{ marginBottom: "1.5rem" }}>
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-                Hello! I am a description for a project. I should take up a
-                couple of lines and only appear when the title is clicked on!
-              </p>
-            </table>
+            {renderProject(
+              "spacestagram",
+              `Hello! I am a description for a project. I should take up a couple
+            of lines and only appear when the title is clicked on! Hello! I am a
+            description for a project. I should take up a couple of lines and
+            only appear when the title is clicked on!`
+            )}
           </div>
         </div>
       </div>
