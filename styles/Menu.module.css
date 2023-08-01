@@ -1,4 +1,5 @@
-.menuButton:hover {
+.menuButton:hover,
+.closeButton:hover {
   cursor: pointer;
 }
 .overlay {
@@ -26,4 +27,9 @@
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.page:hover {
+  color: blueviolet;
+  font-size: 4rem;
 }

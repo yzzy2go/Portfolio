@@ -1,15 +1,22 @@
 .container {
-  margin: 10em 12em;
+  padding: 10em 12em;
+  height: 100vh;
   min-width: 60vw;
 }
 
 .hr {
   height: 3px;
   background: grey;
+  margin-top: 1em;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.link:hover {
+  color: blueviolet;
 }
