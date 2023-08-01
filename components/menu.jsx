@@ -19,8 +19,8 @@ export default function MenuButton() {
       <div style={{ position: "absolute", top: "2em", right: "2em" }}>
         {/* todo: change this image to a svg */}
         <img
-          src="/images/menu.png"
-          style={{ height: "2em" }}
+          src="/images/menuButton.svg"
+          style={{ height: "1.5em" }}
           onClick={() => setOpen(true)}
           className={styles.menuButton}
         ></img>
@@ -64,12 +64,13 @@ export default function MenuButton() {
           </div>
         </div>
         <img
-          src="/images/menuClose.png"
+          src="/images/menuClose.svg"
           style={{
             position: "absolute",
-            top: "2em",
+            top: "1.5em",
             right: "2em",
-            width: "2em",
+            width: "2.5em",
+            padding: "5px",
           }}
           onClick={() => setOpen(false)}
           className={styles.closeButton}

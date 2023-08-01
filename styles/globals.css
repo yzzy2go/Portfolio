@@ -32,11 +32,31 @@ ul {
   pointer-events: none;
   left: -100px;
   top: 50%;
-  /* looks good w darken, multiply, screen */
+  /* darken, multiply, screen */
   mix-blend-mode: darken;
   z-index: 10000;
   background: aqua;
   height: 100px;
   width: 100px;
   transition: 0.15s linear;
+  animation: blobRadius 5s linear infinite;
+}
+
+@keyframes blobRadius {
+  0%,
+  100% {
+    border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%;
+  }
+  20% {
+    border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%;
+  }
+  40% {
+    border-radius: 46% 74% 74% 46% / 74% 58% 62% 46%;
+  }
+  60% {
+    border-radius: 47% 73% 61% 59% / 40% 40% 80% 80%;
+  }
+  80% {
+    border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
+  }
 }

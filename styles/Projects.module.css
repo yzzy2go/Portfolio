@@ -28,8 +28,32 @@
 
 .title {
   color: white;
+  display: inline-block;
 }
 
 .title:hover {
   color: blueviolet;
+}
+
+.visit {
+  margin-left: 1em;
+  color: greenyellow;
+}
+
+.visit:hover {
+  color: goldenrod;
+}
+
+.image {
+  width: 35vw;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1em;
+  margin-left: -4em;
+}
+
+.content {
+  display: inline-block;
+  min-width: 40vw;
+  margin-left: 4rem;
 }

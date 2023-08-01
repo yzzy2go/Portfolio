@@ -2,6 +2,7 @@ import { useState } from "react";
 import HomeButton from "../components/homeButton";
 import Menu from "../components/menu";
 import styles from "../styles/Projects.module.css";
+import Link from "next/link";
 
 export default function Experience() {
   const [projectOpen, setProjectOpen] = useState("");
@@ -14,23 +15,40 @@ export default function Experience() {
     }
   };
 
-  const renderProject = (name, description, type) => {
+  const renderLink = (name, link) => {
+    return (
+      <Link href={link} target="blank">
+        <h3
+          style={{
+            display: projectOpen == name ? "inline-block" : "none",
+          }}
+          className={styles.visit}
+        >
+          {`↗ visit`}
+        </h3>
+      </Link>
+    );
+  };
+
+  const renderProject = (name, description, type, link) => {
     return (
       <div>
         <div className={styles.project}>
-          {/* todo: make a proper link, don't like how it highlights the word */}
-          <button className={styles.button}>
-            <h2 onClick={() => closeProject(name)} className={styles.title}>
-              {`${projectOpen == name ? "￩" : "￫"} ${name}`}
-            </h2>
-          </button>
+          <div>
+            <button className={styles.button}>
+              <h2 onClick={() => closeProject(name)} className={styles.title}>
+                {`${projectOpen == name ? "￩" : "￫"} ${name}`}
+              </h2>
+            </button>
+            {link !== "" ? renderLink(name, link) : <></>}
+          </div>
 
           <h3>{type}</h3>
         </div>
         {/* todo: Just use state to hide this? -> but want nice animation */}
         <div
           style={{
-            maxWidth: "35vw",
+            maxWidth: "40vw",
             display: projectOpen === name ? "block" : "none",
           }}
         >
@@ -46,80 +64,68 @@ export default function Experience() {
       <Menu />
       <div className={styles.container}>
         <div>
-          {/* todo: make this conditional when having more pics */}
           <img
             src={`/images/${projectOpen}.png`}
             style={{
-              width: "35vw",
-              display: "inline-block",
-              verticalAlign: "top",
               visibility: projectOpen !== "" ? "visible" : "hidden",
-              marginTop: "1rem",
-              marginLeft: "-4rem",
             }}
+            className={styles.image}
           ></img>
-          <div
-            style={{
-              display: "inline-block",
-              minWidth: "40vw",
-              marginLeft: "4rem",
-            }}
-          >
+          <div className={styles.content}>
             <h1>Experience</h1>
             <hr className={styles.hr} />
 
             {renderProject(
               "Lacework",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
-              "software engineer"
+              `At Lacework I created an analytics website for the Documentation team 
+              that allowed them to see different metrics tracking traffic to their docs. 
+              This was done through the use of React, Netlify, and Amazon S3.`,
+              "software engineer",
+              "https://www.lacework.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Behaviour",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
-              "game developer"
+              `At Behaviour I led the design and creation of a multi-page React site 
+              with data-driven map elements, including integration of a video streaming 
+              third-party SDK and external APIs. I also aided in developing game elements.`,
+              "game developer",
+              "https://www.bhvr.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Polar",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
-              "software engineer"
+              `During my internship at Polar I designed and introduced a feature using 
+              React components, Django forms, and Django serializers to integrate new customers 
+              into an ad-management software.`,
+              "software engineer",
+              "https://www.createwithnova.com/blog/polar-is-now-nova"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Bunch",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
-              "software engineer"
+              `While at Bunch I automated sorting of bugs using Selenium and Javascript. I also 
+              reduced the app crash rates from 6.3% to 4.2% through analysis of Firebase device 
+              logs for bugs found during bi-weekly regression tests.`,
+              "software engineer",
+              "https://bunch.live/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "BlueCat",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
-              "ux designer"
+              `At BlueCat I developed style guides and design system libraries in Sketch to be used 
+              company wide. In addition, I aided in conducting user interviews to gain feedback 
+              on features.`,
+              "ux designer",
+              "https://bluecatnetworks.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Seneca",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
-              "learning developer"
+              `During my time at Seneca I populated web pages with media elements for online courses 
+              using HTML, CSS, and WordPress.`,
+              "learning developer",
+              "https://www.senecacollege.ca/home.html"
             )}
           </div>
         </div>
