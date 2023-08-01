@@ -77,60 +77,53 @@ export default function Experience() {
 
             {renderProject(
               "Lacework",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `At Lacework I created an analytics website for the Documentation team 
+              that allowed them to see different metrics tracking traffic to their docs. 
+              This was done through the use of React, Netlify, and Amazon S3.`,
               "software engineer",
               "https://www.lacework.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Behaviour",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `At Behaviour I led the design and creation of a multi-page React site 
+              with data-driven map elements, including integration of a video streaming 
+              third-party SDK and external APIs. I also aided in developing game elements.`,
               "game developer",
               "https://www.bhvr.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Polar",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `During my internship at Polar I designed and introduced a feature using 
+              React components, Django forms, and Django serializers to integrate new customers 
+              into an ad-management software.`,
               "software engineer",
               "https://www.createwithnova.com/blog/polar-is-now-nova"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Bunch",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `While at Bunch I automated sorting of bugs using Selenium and Javascript. I also 
+              reduced the app crash rates from 6.3% to 4.2% through analysis of Firebase device 
+              logs for bugs found during bi-weekly regression tests.`,
               "software engineer",
               "https://bunch.live/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "BlueCat",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `At BlueCat I developed style guides and design system libraries in Sketch to be used 
+              company wide. In addition, I aided in conducting user interviews to gain feedback 
+              on features.`,
               "ux designer",
               "https://bluecatnetworks.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "Seneca",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `During my time at Seneca I populated web pages with media elements for online courses 
+              using HTML, CSS, and WordPress.`,
               "learning developer",
               "https://www.senecacollege.ca/home.html"
             )}

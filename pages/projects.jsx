@@ -75,40 +75,35 @@ export default function Portfolio() {
 
             {renderProject(
               "uwexplore",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `uwexplore is a web application that streamlines the course searching and planning process 
+              for University of Waterloo undergraduate students. The interactive planner allows students 
+              to view courses, check graduation requirements, and visualize their schedule. I was responsible 
+              for creating the frontend using TypeScript.`,
               "web",
               "https://uwexplore.com/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "spacestagram",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `Spacestagram is an Instagram-esque photo feed populated with images
+              from NASA's Astonomy Picture of the Day API. It was built using React with
+              design system Polaris, and tested using Jest and Lighthouse.`,
               "web",
               "https://yzzy2go.github.io/Spacestagram/"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "deliverydog",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `I created a simple WebGL infinite runner game using C# scripts, 
+              rigidbody2D components, box colliders, triggers and animations.`,
               "game",
               "https://play.unity3dusercontent.com/webgl/34ef30be-d09e-4462-9fbb-5a11cf50858c?screenshot=false&embedType=embed"
             )}
             <hr className={styles.hr} />
             {renderProject(
               "portfolio",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`,
+              `This portfolio was created with Next.js and custom components and styling. It 
+              showcases past projects and work experience I've accumulated over the years.`,
               "web",
               ""
             )}
