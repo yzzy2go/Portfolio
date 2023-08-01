@@ -32,12 +32,14 @@ export default function Contact() {
                 <div style={{ display: "grid", gridGap: "1em" }}>
                   <Link
                     href="https://www.linkedin.com/in/yzabelle-go/"
+                    target="_blank"
                     className={styles.link}
                   >
                     <h2>LinkedIn</h2>
                   </Link>
                   <Link
                     href="https://github.com/yzzy2go"
+                    target="_blank"
                     className={styles.link}
                   >
                     <h2>Github</h2>

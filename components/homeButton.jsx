@@ -5,8 +5,8 @@ export default function HomeButton() {
     <div style={{ position: "absolute", top: "2em", left: "2em" }}>
       <Link href="/">
         <div style={{ position: "relative", textAlign: "center" }}>
-          <img src="/images/homeButtonOutline.svg" style={{ width: "4em" }} />
-          <div style={{ position: "absolute", top: "1em", left: "1.5em" }}>
+          <img src="/images/logo.svg" style={{ width: "3em" }} />
+          {/* <div style={{ position: "absolute", top: "1em", left: "1.5em" }}>
             <h2
               style={{
                 marginTop: "0px",
@@ -16,7 +16,7 @@ export default function HomeButton() {
             >
               Y
             </h2>
-          </div>
+          </div> */}
         </div>
       </Link>
     </div>
