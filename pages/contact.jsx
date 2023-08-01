@@ -18,7 +18,7 @@ export default function Contact() {
             <h3 style={{ display: "inline" }}>email</h3>
             <Link href="mailto:yzabelle.tgo@gmail.com" className={styles.link}>
               <h2 style={{ display: "inline", marginLeft: "30px" }}>
-                yzabelle.tgo@gmail.com
+                ↗ yzabelle.tgo@gmail.com
               </h2>
             </Link>
           </div>
@@ -35,14 +35,14 @@ export default function Contact() {
                     target="_blank"
                     className={styles.link}
                   >
-                    <h2>LinkedIn</h2>
+                    <h2>↗ LinkedIn</h2>
                   </Link>
                   <Link
                     href="https://github.com/yzzy2go"
                     target="_blank"
                     className={styles.link}
                   >
-                    <h2>Github</h2>
+                    <h2>↗ Github</h2>
                   </Link>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Contact() {
                 className={styles.link}
               >
                 <h2 style={{ display: "inline", marginLeft: "40px" }}>
-                  Resume
+                  ↗ Resume
                 </h2>
               </Link>
             </div>
