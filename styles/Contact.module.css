@@ -1,5 +1,5 @@
 .container {
-  padding: 10em 12em;
+  padding: 12em 12em;
   height: 100vh;
   min-width: 60vw;
 }
@@ -13,7 +13,7 @@
 .links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 1.5em;
 }
 

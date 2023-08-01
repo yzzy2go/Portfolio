@@ -59,7 +59,7 @@ export default function Portfolio() {
           <div
             style={{
               display: "inline-block",
-              minWidth: "30vw",
+              minWidth: "40vw",
               marginLeft: "6rem",
             }}
           >

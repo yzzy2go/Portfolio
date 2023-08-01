@@ -14,7 +14,7 @@ export default function Contact() {
 
         {/* todo: fix the resizing issue */}
         <div className={styles.links}>
-          <div style={{ marginRight: "2em" }}>
+          <div style={{ marginRight: "6em", marginBottom: "1em" }}>
             <h3 style={{ display: "inline" }}>email</h3>
             <Link href="mailto:yzabelle.tgo@gmail.com" className={styles.link}>
               <h2 style={{ display: "inline", marginLeft: "30px" }}>
