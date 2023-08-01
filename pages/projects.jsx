@@ -1,7 +1,7 @@
 import { useState } from "react";
 import HomeButton from "../components/homeButton";
 import Menu from "../components/menu";
-import styles from "../styles/Portfolio.module.css";
+import styles from "../styles/Projects.module.css";
 
 export default function Portfolio() {
   const [projectOpen, setProjectOpen] = useState("");
@@ -14,23 +14,23 @@ export default function Portfolio() {
     }
   };
 
-  const renderProject = (name, description) => {
+  const renderProject = (name, description, type) => {
     return (
       <div>
         <div className={styles.project}>
           {/* todo: make a proper link, don't like how it highlights the word */}
           <button className={styles.button}>
             <h2 onClick={() => closeProject(name)} className={styles.title}>
-              {name}
+              {`${projectOpen == name ? "￩" : "￫"} ${name}`}
             </h2>
           </button>
 
-          <h3>web</h3>
+          <h3>{type}</h3>
         </div>
         {/* todo: Just use state to hide this? -> but want nice animation */}
         <div
           style={{
-            maxWidth: "30vw",
+            maxWidth: "35vw",
             display: projectOpen === name ? "block" : "none",
           }}
         >
@@ -48,19 +48,21 @@ export default function Portfolio() {
         <div>
           {/* todo: make this conditional when having more pics */}
           <img
-            src="/images/placeholder.png"
+            src={`/images/${projectOpen}.png`}
             style={{
-              width: "32vw",
+              width: "35vw",
               display: "inline-block",
               verticalAlign: "top",
               visibility: projectOpen !== "" ? "visible" : "hidden",
+              marginTop: "1rem",
+              marginLeft: "-4rem",
             }}
           ></img>
           <div
             style={{
               display: "inline-block",
-              minWidth: "30vw",
-              marginLeft: "6rem",
+              minWidth: "40vw",
+              marginLeft: "4rem",
             }}
           >
             <h1>Projects</h1>
@@ -71,23 +73,8 @@ export default function Portfolio() {
               `Hello! I am a description for a project. I should take up a couple
             of lines and only appear when the title is clicked on! Hello! I am a
             description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`
-            )}
-            <hr className={styles.hr} />
-            {renderProject(
-              "uwexplor",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`
-            )}
-            <hr className={styles.hr} />
-            {renderProject(
-              "deliverydog",
-              `Hello! I am a description for a project. I should take up a couple
-            of lines and only appear when the title is clicked on! Hello! I am a
-            description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`
+            only appear when the title is clicked on!`,
+              "web"
             )}
             <hr className={styles.hr} />
             {renderProject(
@@ -95,7 +82,26 @@ export default function Portfolio() {
               `Hello! I am a description for a project. I should take up a couple
             of lines and only appear when the title is clicked on! Hello! I am a
             description for a project. I should take up a couple of lines and
-            only appear when the title is clicked on!`
+            only appear when the title is clicked on!`,
+              "web"
+            )}
+            <hr className={styles.hr} />
+            {renderProject(
+              "deliverydog",
+              `Hello! I am a description for a project. I should take up a couple
+            of lines and only appear when the title is clicked on! Hello! I am a
+            description for a project. I should take up a couple of lines and
+            only appear when the title is clicked on!`,
+              "game"
+            )}
+            <hr className={styles.hr} />
+            {renderProject(
+              "portfolio",
+              `Hello! I am a description for a project. I should take up a couple
+            of lines and only appear when the title is clicked on! Hello! I am a
+            description for a project. I should take up a couple of lines and
+            only appear when the title is clicked on!`,
+              "web"
             )}
           </div>
         </div>

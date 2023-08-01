@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Yzabelle Go</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,7 +26,7 @@ export default function Home() {
             style={{ display: "inline-block", marginRight: "4rem" }}
             className={styles.link}
           >
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/projects">Projects</Link>
           </h2>
           <h2
             style={{ display: "inline-block", marginRight: "4rem" }}

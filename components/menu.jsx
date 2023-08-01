@@ -41,7 +41,7 @@ export default function MenuButton() {
               style={{ fontSize: "4rem", marginTop: "2rem" }}
               className={styles.page}
             >
-              <Link href="/portfolio" onClick={() => closeMenu("/portfolio")}>
+              <Link href="/projects" onClick={() => closeMenu("/projects")}>
                 Portfolio
               </Link>
             </h1>
