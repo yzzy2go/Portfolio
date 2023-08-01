@@ -22,19 +22,13 @@ export default function Home() {
           opportunities.
         </p>
         <div style={{ marginTop: "2rem" }}>
-          <h2
-            style={{ display: "inline-block", marginRight: "4rem" }}
-            className={styles.link}
-          >
+          <h2 style={{ marginRight: "4rem" }} className={styles.link}>
             <Link href="/projects">Projects</Link>
           </h2>
-          <h2
-            style={{ display: "inline-block", marginRight: "4rem" }}
-            className={styles.link}
-          >
+          <h2 style={{ marginRight: "4rem" }} className={styles.link}>
             <Link href="/experience">Experience</Link>
           </h2>
-          <h2 style={{ display: "inline-block" }} className={styles.link}>
+          <h2 className={styles.link}>
             <Link href="/contact">Contact</Link>
           </h2>
         </div>

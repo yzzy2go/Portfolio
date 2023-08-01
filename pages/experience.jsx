@@ -67,21 +67,11 @@ export default function Experience() {
           <img
             src={`/images/${projectOpen}.png`}
             style={{
-              width: "35vw",
-              display: "inline-block",
-              verticalAlign: "top",
               visibility: projectOpen !== "" ? "visible" : "hidden",
-              marginTop: "1rem",
-              marginLeft: "-4rem",
             }}
+            className={styles.image}
           ></img>
-          <div
-            style={{
-              display: "inline-block",
-              minWidth: "40vw",
-              marginLeft: "4rem",
-            }}
-          >
+          <div className={styles.content}>
             <h1>Experience</h1>
             <hr className={styles.hr} />
 

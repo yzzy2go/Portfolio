@@ -32,7 +32,7 @@ ul {
   pointer-events: none;
   left: -100px;
   top: 50%;
-  /* looks good w darken, multiply, screen */
+  /* darken, multiply, screen */
   mix-blend-mode: darken;
   z-index: 10000;
   background: aqua;
