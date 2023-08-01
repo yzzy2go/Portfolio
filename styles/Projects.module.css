@@ -72,17 +72,17 @@
     margin: 2em 0em 4em -3.5em;
   }
   .image {
-    width: 80vw;
+    /* width: 80vw;
     margin-top: 0;
-    margin-left: -3.5em;
+    margin-left: -3.5em; */
+    display: none;
   }
-
   .description {
     max-width: 80vw;
   }
 }
 
-@media only screen and (min-height: 700px) and (max-height: 900px) {
+@media only screen and (min-height: 750px) and (max-height: 900px) {
   .container {
     top: 16vh;
   }
@@ -91,7 +91,7 @@
   }
 }
 
-@media only screen and (max-height: 699.9px) {
+@media only screen and (max-height: 749.9px) {
   .container {
     top: 12vh;
   }
