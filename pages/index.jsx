@@ -18,7 +18,7 @@ export default function Home() {
         <h1 className={styles.title}>Yzabelle Go</h1>
 
         <p className={styles.description}>
-          Software Engineer, frontend developer. Looking for full-time
+          Software engineer, frontend developer. Looking for full-time
           opportunities.
         </p>
         <div style={{ marginTop: "2rem" }}>
