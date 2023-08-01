@@ -28,8 +28,18 @@
 
 .title {
   color: white;
+  display: inline-block;
 }
 
 .title:hover {
   color: blueviolet;
+}
+
+.visit {
+  margin-left: 1em;
+  color: greenyellow;
+}
+
+.visit:hover {
+  color: goldenrod;
 }
