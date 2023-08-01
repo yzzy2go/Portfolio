@@ -1,7 +1,7 @@
 import { useState } from "react";
 import HomeButton from "../components/homeButton";
 import Menu from "../components/menu";
-import styles from "../styles/Portfolio.module.css";
+import styles from "../styles/Projects.module.css";
 
 export default function Experience() {
   const [projectOpen, setProjectOpen] = useState("");
