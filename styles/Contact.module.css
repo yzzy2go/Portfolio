@@ -1,7 +1,7 @@
 .container {
-  padding: 12em 12em;
+  /* padding: 12em 4em; */
   height: 100vh;
-  min-width: 60vw;
+  /* min-width: 80vw; */
 }
 
 .hr {
