@@ -46,9 +46,9 @@ export default function Portfolio() {
         {/* todo: Just use state to hide this? -> but want nice animation */}
         <div
           style={{
-            maxWidth: "40vw",
             display: projectOpen === name ? "block" : "none",
           }}
+          className={styles.description}
         >
           <p style={{ marginBottom: "1.5rem" }}>{description}</p>
         </div>

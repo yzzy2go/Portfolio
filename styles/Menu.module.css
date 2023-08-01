@@ -26,3 +26,15 @@
   color: blueviolet;
   font-size: 4rem;
 }
+
+@media only screen and (min-height: 700px) and (max-height: 900px) {
+  .overlaycontent {
+    top: 18%;
+  }
+}
+
+@media only screen and (max-height: 699.9px) {
+  .overlaycontent {
+    top: 10%;
+  }
+}
