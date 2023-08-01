@@ -16,3 +16,20 @@
   background: grey;
   margin-top: 1em;
 }
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+}
+
+.title:hover {
+  color: blueviolet;
+}

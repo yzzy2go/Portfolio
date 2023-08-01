@@ -19,9 +19,12 @@ export default function Portfolio() {
       <div>
         <div className={styles.project}>
           {/* todo: make a proper link, don't like how it highlights the word */}
-          <h2 onClick={() => closeProject(name)} style={{ cursor: "pointer" }}>
-            {name}
-          </h2>
+          <button className={styles.button}>
+            <h2 onClick={() => closeProject(name)} className={styles.title}>
+              {name}
+            </h2>
+          </button>
+
           <h3>web</h3>
         </div>
         {/* todo: Just use state to hide this? -> but want nice animation */}

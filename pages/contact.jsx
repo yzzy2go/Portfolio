@@ -16,7 +16,7 @@ export default function Contact() {
         <div className={styles.links}>
           <div style={{ marginRight: "2em" }}>
             <h3 style={{ display: "inline" }}>email</h3>
-            <Link href="mailto:yzabelle.tgo@gmail.com">
+            <Link href="mailto:yzabelle.tgo@gmail.com" className={styles.link}>
               <h2 style={{ display: "inline", marginLeft: "30px" }}>
                 yzabelle.tgo@gmail.com
               </h2>
@@ -30,10 +30,16 @@ export default function Contact() {
               </h3>
               <div style={{ display: "inline-block" }}>
                 <div style={{ display: "grid", gridGap: "1em" }}>
-                  <Link href="https://www.linkedin.com/in/yzabelle-go/">
+                  <Link
+                    href="https://www.linkedin.com/in/yzabelle-go/"
+                    className={styles.link}
+                  >
                     <h2>LinkedIn</h2>
                   </Link>
-                  <Link href="https://github.com/yzzy2go">
+                  <Link
+                    href="https://github.com/yzzy2go"
+                    className={styles.link}
+                  >
                     <h2>Github</h2>
                   </Link>
                 </div>
@@ -43,7 +49,11 @@ export default function Contact() {
             <div style={{ marginTop: "1em" }}>
               <h3 style={{ display: "inline" }}>other</h3>
               {/* todo: sketchy marginLeft - not responsive? */}
-              <Link href="Yzabelle_Go_resume.pdf" target="_blank">
+              <Link
+                href="Yzabelle_Go_resume.pdf"
+                target="_blank"
+                className={styles.link}
+              >
                 <h2 style={{ display: "inline", marginLeft: "40px" }}>
                   Resume
                 </h2>
