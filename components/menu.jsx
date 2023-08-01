@@ -32,22 +32,31 @@ export default function MenuButton() {
       >
         <div className={styles.overlaycontent}>
           <div>
-            <h1 style={{ fontSize: "4rem" }}>
+            <h1 style={{ fontSize: "4rem" }} className={styles.page}>
               <Link href="/" onClick={() => closeMenu("/")}>
                 Home
               </Link>
             </h1>
-            <h1 style={{ fontSize: "4rem", marginTop: "2rem" }}>
+            <h1
+              style={{ fontSize: "4rem", marginTop: "2rem" }}
+              className={styles.page}
+            >
               <Link href="/portfolio" onClick={() => closeMenu("/portfolio")}>
                 Portfolio
               </Link>
             </h1>
-            <h1 style={{ fontSize: "4rem", marginTop: "2rem" }}>
+            <h1
+              style={{ fontSize: "4rem", marginTop: "2rem" }}
+              className={styles.page}
+            >
               <Link href="/experience" onClick={() => closeMenu("/experience")}>
                 Experience
               </Link>
             </h1>
-            <h1 style={{ fontSize: "4rem", marginTop: "2rem" }}>
+            <h1
+              style={{ fontSize: "4rem", marginTop: "2rem" }}
+              className={styles.page}
+            >
               <Link href="/contact" onClick={() => closeMenu("/contact")}>
                 Contact
               </Link>
