@@ -39,7 +39,6 @@
 
 @media only screen and (max-width: 860px) {
   .container {
-    background-color: aqua;
     padding-left: 6em;
     padding-right: 6em;
   }

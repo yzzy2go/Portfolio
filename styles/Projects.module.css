@@ -3,6 +3,11 @@
   left: 16vw;
   position: absolute;
 }
+.containerP {
+  top: 26vh;
+  left: 16vw;
+  position: absolute;
+}
 
 .project {
   display: flex;
@@ -67,6 +72,9 @@
   .container {
     top: 12vh;
   }
+  .containerP {
+    top: 12vh;
+  }
   .content {
     min-width: 80vw;
     margin: 2em 0em 4em -3.5em;
@@ -86,6 +94,9 @@
   .container {
     top: 16vh;
   }
+  .containerP {
+    top: 20vh;
+  }
   .hr {
     margin-top: 0.8em;
   }
@@ -94,6 +105,9 @@
 @media only screen and (max-height: 749.9px) {
   .container {
     top: 12vh;
+  }
+  .containerP {
+    top: 16vh;
   }
   .hr {
     margin-top: 0.8em;

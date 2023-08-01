@@ -60,7 +60,7 @@ export default function Portfolio() {
     <div style={{ height: "100vh" }}>
       <HomeButton />
       <Menu />
-      <div className={styles.container}>
+      <div className={styles.containerP}>
         <div>
           <img
             src={`/images/${projectOpen}.png`}
