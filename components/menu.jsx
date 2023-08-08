@@ -2,12 +2,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Menu.module.css";
+import Grid from "@mui/material/Grid";
 
 export default function MenuButton() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
 
-  // todo: is this necessary?
   const closeMenu = (href) => {
     if (router.pathname === href) {
       setOpen(false);
@@ -27,16 +27,24 @@ export default function MenuButton() {
       </div>
       <div
         className={styles.overlay}
-        id="menu"
-        style={{ display: open ? "block" : "none" }}
+        style={{ display: open ? "inline-block" : "none" }}
       >
-        <div className={styles.overlaycontent}>
-          <div>
+        <Grid
+          container
+          spacing={2}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          sx={{ minHeight: "100vh" }}
+        >
+          <Grid item xs={12}>
             <h1 style={{ fontSize: "4rem" }} className={styles.page}>
               <Link href="/" onClick={() => closeMenu("/")}>
                 Home
               </Link>
             </h1>
+          </Grid>
+          <Grid item xs={12}>
             <h1
               style={{ fontSize: "4rem", marginTop: "2rem" }}
               className={styles.page}
@@ -45,6 +53,8 @@ export default function MenuButton() {
                 Portfolio
               </Link>
             </h1>
+          </Grid>
+          <Grid item xs={12}>
             <h1
               style={{ fontSize: "4rem", marginTop: "2rem" }}
               className={styles.page}
@@ -53,6 +63,8 @@ export default function MenuButton() {
                 Experience
               </Link>
             </h1>
+          </Grid>
+          <Grid item xs={12}>
             <h1
               style={{ fontSize: "4rem", marginTop: "2rem" }}
               className={styles.page}
@@ -61,8 +73,8 @@ export default function MenuButton() {
                 Contact
               </Link>
             </h1>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
         <img
           src="/images/menuClose.svg"
           style={{

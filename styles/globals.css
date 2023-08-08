@@ -6,6 +6,7 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: black;
   color: #ffffff;
+  overflow: hidden;
 }
 
 a {
@@ -59,15 +60,6 @@ ul {
   80% {
     border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
   }
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 #bg-wrap {
