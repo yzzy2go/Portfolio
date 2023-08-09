@@ -8,53 +8,38 @@ import Box from "@mui/material/Box";
 import Background from "../components/background";
 
 export default function Portfolio() {
-  const [projectOpen, setProjectOpen] = useState("");
+  const [projectHover, setProjectHover] = useState("");
 
-  const closeProject = (name) => {
-    if (projectOpen === name) {
-      setProjectOpen("");
-    } else {
-      setProjectOpen(name);
-    }
+  const mouseEnter = (name) => {
+    setProjectHover(name);
   };
-  const renderLink = (name, link) => {
-    return (
-      <Link href={link} target="blank">
-        <h3
-          style={{
-            display: projectOpen == name ? "inline-block" : "none",
-          }}
-          className={styles.visit}
-        >
-          {`↗ visit`}
-        </h3>
-      </Link>
-    );
+
+  const mouseLeave = () => {
+    setProjectHover("");
   };
 
   const renderProject = (name, description, type, link) => {
     return (
       <div>
         <div className={styles.project}>
-          <div>
-            <button className={styles.button}>
-              <h2 onClick={() => closeProject(name)} className={styles.title}>
-                {/* {`${projectOpen == name ? "￩" : "￫"} ${name}`} */}
-                {name}
+          {link === "" ? (
+            <h2 className={styles.noLink}>{name}</h2>
+          ) : (
+            <Link href={link} target="_blank">
+              <h2
+                onMouseOver={() => mouseEnter(name)}
+                onMouseLeave={mouseLeave}
+                className={styles.title}
+              >
+                {`${projectHover === name ? "↗" : ""} ${name}`}
               </h2>
-            </button>
-            {/* {link !== "" ? renderLink(name, link) : <></>} */}
-            {renderLink(name, link)}
-          </div>
+            </Link>
+          )}
+
           <h3>{type}</h3>
         </div>
         {/* todo: Just use state to hide this? -> but want nice animation */}
-        <div
-          // style={{
-          //   display: projectOpen === name ? "block" : "none",
-          // }}
-          className={styles.description}
-        >
+        <div className={styles.description}>
           <p style={{ marginBottom: "1.5rem", marginTop: "0.75em" }}>
             {description}
           </p>

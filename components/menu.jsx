@@ -50,7 +50,7 @@ export default function MenuButton() {
               className={styles.page}
             >
               <Link href="/projects" onClick={() => closeMenu("/projects")}>
-                Portfolio
+                Projects
               </Link>
             </h1>
           </Grid>

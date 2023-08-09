@@ -1,19 +1,7 @@
-/* .container {
-  top: 26vh;
-  left: 16vw;
-  position: absolute;
-} */
-/* .containerP {
-  top: 26vh;
-  left: 16vw;
-  position: absolute;
-} */
-
 .project {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* padding: 0.8rem 0; */
+  align-items: end;
 }
 
 .hr {
@@ -32,13 +20,17 @@
   cursor: pointer;
 }
 
-.title {
+.title,
+.noLink {
   color: white;
   display: inline-block;
+  /* padding: 5px; */
+  padding-top: 10px;
+  line-height: 100%;
 }
 
 .title:hover {
-  color: blueviolet;
+  color: goldenrod;
 }
 
 .visit {
@@ -68,7 +60,7 @@
   margin-top: "10em";
   max-width: 40vw;
 } */
-
+/* 
 @media only screen and (max-width: 900px) {
   .container {
     top: 12vh;
@@ -113,4 +105,4 @@
   .project {
     padding: 0.5em;
   }
-}
+} */
