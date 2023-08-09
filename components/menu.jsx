@@ -1,8 +1,9 @@
 import { useState } from "react";
+import Grid from "@mui/material/Grid";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 import styles from "../styles/Menu.module.css";
-import Grid from "@mui/material/Grid";
 
 export default function MenuButton() {
   const [open, setOpen] = useState(false);

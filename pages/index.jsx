@@ -1,8 +1,9 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import Background from "../components/background";
 import Grid from "@mui/material/Grid";
+import Head from "next/head";
+import Link from "next/link";
+
+import styles from "../styles/Home.module.css";
+import Background from "../components/background";
 import Header from "../components/header";
 
 export default function Home() {

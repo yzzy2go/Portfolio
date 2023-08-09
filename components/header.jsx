@@ -1,6 +1,6 @@
+import styles from "../styles/Header.module.css";
 import HomeButton from "../components/homeButton";
 import Menu from "../components/menu";
-import styles from "../styles/Header.module.css";
 
 export default function Header() {
   return (

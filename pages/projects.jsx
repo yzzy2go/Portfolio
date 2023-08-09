@@ -1,8 +1,9 @@
 import { useState } from "react";
-import styles from "../styles/Projects.module.css";
-import Link from "next/link";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Link from "next/link";
+
+import styles from "../styles/Projects.module.css";
 import Background from "../components/background";
 import Header from "../components/header";
 
