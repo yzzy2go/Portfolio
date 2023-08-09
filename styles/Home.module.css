@@ -1,3 +1,19 @@
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 0px 2em;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link:hover {
+  color: blueviolet;
+}
+
 .title {
   margin: 0 0 1rem;
   line-height: 1.15;
@@ -9,27 +25,4 @@
 .description {
   text-align: center;
   cursor: default;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-  padding: 0px 2em;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-.link {
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.link:hover {
-  color: blueviolet;
 }

@@ -1,23 +1,8 @@
-.project {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
 .hr {
   height: 3px;
   background: grey;
   border: grey;
   margin-top: 1em;
-}
-
-.button {
-  background-color: transparent;
-  border: none;
-}
-
-.button:hover {
-  cursor: pointer;
 }
 
 .title,
@@ -32,11 +17,13 @@
   color: goldenrod;
 }
 
-.visit {
-  margin-left: 1em;
-  color: greenyellow;
+.type {
+  text-align: right;
 }
 
-.visit:hover {
-  color: goldenrod;
+@media (max-width: 600px) {
+  .type {
+    text-align: left;
+    padding-top: 6px;
+  }
 }
