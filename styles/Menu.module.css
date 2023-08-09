@@ -1,7 +1,12 @@
+.menuButton {
+  display: inline-block;
+}
+
 .menuButton:hover,
 .closeButton:hover {
   cursor: pointer;
 }
+
 .overlay {
   height: 100%;
   width: 100%;
@@ -15,9 +20,18 @@
   animation: fadeIn 0.5s;
 }
 
+.page {
+  font-size: 4rem;
+}
+
 .page:hover {
   color: blueviolet;
-  font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+  .page {
+    font-size: 3rem;
+  }
 }
 
 @keyframes fadeIn {

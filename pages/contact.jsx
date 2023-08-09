@@ -1,24 +1,28 @@
 import Link from "next/link";
-import HomeButton from "../components/homeButton";
-import Menu from "../components/menu";
 import styles from "../styles/Contact.module.css";
 import Grid from "@mui/material/Grid";
 import Background from "../components/background";
+import Header from "../components/header";
 
 export default function Contact() {
   return (
     <>
       <div style={{ position: "relative", zIndex: "100" }}>
-        <HomeButton />
-        <Menu />
+        <Header />
         <Grid
           container
           direction="row"
           justifyContent="center"
-          // todo: make padding more responsive to screen size
-          sx={{ minHeight: "100vh", textAlign: "center", paddingTop: "16em" }}
+          sx={{ minHeight: "100vh", textAlign: "center" }}
+          className={styles.grid}
         >
-          <Grid item xs={8} md={6} sx={{ textAlign: "left" }}>
+          <Grid
+            item
+            xs={8}
+            md={6}
+            sx={{ textAlign: "left" }}
+            className={styles.container}
+          >
             <h1>Contact</h1>
             <hr className={styles.hr} />
             <Grid container spacing={4} sx={{ alignItems: "end" }}>

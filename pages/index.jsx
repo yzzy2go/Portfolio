@@ -1,10 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import HomeButton from "../components/homeButton";
-import Menu from "../components/menu";
 import Background from "../components/background";
 import Grid from "@mui/material/Grid";
+import Header from "../components/header";
 
 export default function Home() {
   return (
@@ -15,11 +14,9 @@ export default function Home() {
       </Head>
 
       <div style={{ position: "relative", zIndex: "100" }}>
-        <HomeButton />
-        <Menu />
+        <Header />
         <Grid
           container
-          spacing={2}
           direction="column"
           alignItems="center"
           justifyContent="center"
@@ -35,18 +32,28 @@ export default function Home() {
             </p>
           </Grid>
 
-          <Grid item xs={12}>
-            <div style={{ marginTop: "2rem" }}>
-              <h2 style={{ marginRight: "4rem" }} className={styles.link}>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+            sx={{ marginTop: "2em", textAlign: "center" }}
+          >
+            <Grid item xs={12} sm={1.5}>
+              <h2 className={styles.link}>
                 <Link href="/projects">Projects</Link>
               </h2>
-              <h2 style={{ marginRight: "4rem" }} className={styles.link}>
+            </Grid>
+            <Grid item xs={12} sm={1.5}>
+              <h2 className={styles.link}>
                 <Link href="/experience">Experience</Link>
               </h2>
+            </Grid>
+            <Grid item xs={12} sm={1.5}>
               <h2 className={styles.link}>
                 <Link href="/contact">Contact</Link>
               </h2>
-            </div>
+            </Grid>
           </Grid>
         </Grid>
       </div>

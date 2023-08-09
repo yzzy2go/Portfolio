@@ -2,11 +2,9 @@ import Link from "next/link";
 
 export default function HomeButton() {
   return (
-    <div style={{ position: "absolute", top: "2em", left: "2em" }}>
+    <div>
       <Link href="/">
-        <div style={{ position: "relative", textAlign: "center" }}>
-          <img src="/images/logo.svg" style={{ width: "3em" }} />
-        </div>
+        <img src="/images/logo.svg" style={{ width: "3em" }} />
       </Link>
     </div>
   );

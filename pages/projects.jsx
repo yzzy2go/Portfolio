@@ -1,11 +1,10 @@
 import { useState } from "react";
-import HomeButton from "../components/homeButton";
-import Menu from "../components/menu";
 import styles from "../styles/Projects.module.css";
 import Link from "next/link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Background from "../components/background";
+import Header from "../components/header";
 
 export default function Portfolio() {
   const [projectHover, setProjectHover] = useState("");
@@ -22,23 +21,27 @@ export default function Portfolio() {
     return (
       <div>
         <div className={styles.project}>
-          {link === "" ? (
-            <h2 className={styles.noLink}>{name}</h2>
-          ) : (
-            <Link href={link} target="_blank">
-              <h2
-                onMouseOver={() => mouseEnter(name)}
-                onMouseLeave={mouseLeave}
-                className={styles.title}
-              >
-                {`${projectHover === name ? "↗" : ""} ${name}`}
-              </h2>
-            </Link>
-          )}
-
-          <h3>{type}</h3>
+          <Grid container direction="row" alignItems="end">
+            <Grid item xs={12} sm={6}>
+              {link === "" ? (
+                <h2 className={styles.noLink}>{name}</h2>
+              ) : (
+                <Link href={link} target="_blank">
+                  <h2
+                    onMouseOver={() => mouseEnter(name)}
+                    onMouseLeave={mouseLeave}
+                    className={styles.title}
+                  >
+                    {`${projectHover === name ? "↗" : ""} ${name}`}
+                  </h2>
+                </Link>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6} className={styles.type}>
+              <h3>{type}</h3>
+            </Grid>
+          </Grid>
         </div>
-        {/* todo: Just use state to hide this? -> but want nice animation */}
         <div className={styles.description}>
           <p style={{ marginBottom: "1.5rem", marginTop: "0.75em" }}>
             {description}
@@ -49,16 +52,19 @@ export default function Portfolio() {
   };
 
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <div style={{ position: "relative", zIndex: "100" }}>
-        <HomeButton />
-        <Menu />
+        <Header />
         <Grid
           container
           direction="row"
           justifyContent="center"
-          // todo: make padding more responsive to screen size
-          sx={{ minHeight: "100vh", textAlign: "center", paddingTop: "16em" }}
+          alignItems="center"
+          sx={{
+            position: "relative",
+            minHeight: "100vh",
+            textAlign: "center",
+          }}
         >
           {/* todo: add picture gallery */}
           {/* <Grid item xs={5} sx={{ marginRight: "2em" }}>
@@ -72,7 +78,7 @@ export default function Portfolio() {
             ></img>
           </Grid> */}
 
-          <Grid item xs={8} md={6} sx={{ textAlign: "left" }}>
+          <Grid item xs={8} md={6} sx={{ textAlign: "left", margin: "6em 0" }}>
             <Box>
               <h1>Projects</h1>
               <hr className={styles.hr} />
@@ -118,6 +124,6 @@ export default function Portfolio() {
       <div style={{ opacity: "75%" }}>
         <Background />
       </div>
-    </>
+    </div>
   );
 }

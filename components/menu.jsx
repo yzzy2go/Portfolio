@@ -16,7 +16,7 @@ export default function MenuButton() {
 
   return (
     <div>
-      <div style={{ position: "absolute", top: "2em", right: "2em" }}>
+      <div>
         {/* todo: change this image to a svg */}
         <img
           src="/images/menuButton.svg"
@@ -27,7 +27,9 @@ export default function MenuButton() {
       </div>
       <div
         className={styles.overlay}
-        style={{ display: open ? "inline-block" : "none" }}
+        style={{
+          display: open ? "inline-block" : "none",
+        }}
       >
         <Grid
           container
@@ -38,37 +40,28 @@ export default function MenuButton() {
           sx={{ minHeight: "100vh" }}
         >
           <Grid item xs={12}>
-            <h1 style={{ fontSize: "4rem" }} className={styles.page}>
+            <h1 className={styles.page}>
               <Link href="/" onClick={() => closeMenu("/")}>
                 Home
               </Link>
             </h1>
           </Grid>
           <Grid item xs={12}>
-            <h1
-              style={{ fontSize: "4rem", marginTop: "2rem" }}
-              className={styles.page}
-            >
+            <h1 style={{ marginTop: "2rem" }} className={styles.page}>
               <Link href="/projects" onClick={() => closeMenu("/projects")}>
                 Projects
               </Link>
             </h1>
           </Grid>
           <Grid item xs={12}>
-            <h1
-              style={{ fontSize: "4rem", marginTop: "2rem" }}
-              className={styles.page}
-            >
+            <h1 style={{ marginTop: "2rem" }} className={styles.page}>
               <Link href="/experience" onClick={() => closeMenu("/experience")}>
                 Experience
               </Link>
             </h1>
           </Grid>
           <Grid item xs={12}>
-            <h1
-              style={{ fontSize: "4rem", marginTop: "2rem" }}
-              className={styles.page}
-            >
+            <h1 style={{ marginTop: "2rem" }} className={styles.page}>
               <Link href="/contact" onClick={() => closeMenu("/contact")}>
                 Contact
               </Link>
