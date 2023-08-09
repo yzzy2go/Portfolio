@@ -60,6 +60,7 @@ export default function Portfolio() {
           // todo: make padding more responsive to screen size
           sx={{ minHeight: "100vh", textAlign: "center", paddingTop: "16em" }}
         >
+          {/* todo: add picture gallery */}
           {/* <Grid item xs={5} sx={{ marginRight: "2em" }}>
             <img
               src={`/images/${projectOpen}.png`}
