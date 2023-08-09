@@ -1,19 +1,7 @@
-.container {
-  top: 26vh;
-  left: 16vw;
-  position: absolute;
-}
-.containerP {
-  top: 26vh;
-  left: 16vw;
-  position: absolute;
-}
-
 .project {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 0;
+  align-items: end;
 }
 
 .hr {
@@ -32,13 +20,16 @@
   cursor: pointer;
 }
 
-.title {
+.title,
+.noLink {
   color: white;
   display: inline-block;
+  padding-top: 10px;
+  line-height: 100%;
 }
 
 .title:hover {
-  color: blueviolet;
+  color: goldenrod;
 }
 
 .visit {
@@ -48,71 +39,4 @@
 
 .visit:hover {
   color: goldenrod;
-}
-
-.image {
-  width: 35vw;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 1em;
-  margin-left: -4em;
-}
-
-.content {
-  display: inline-block;
-  min-width: 40vw;
-  margin-left: 4rem;
-}
-
-.description {
-  max-width: 40vw;
-}
-
-@media only screen and (max-width: 900px) {
-  .container {
-    top: 12vh;
-  }
-  .containerP {
-    top: 12vh;
-  }
-  .content {
-    min-width: 80vw;
-    margin: 2em 0em 4em -3.5em;
-  }
-  .image {
-    /* width: 80vw;
-    margin-top: 0;
-    margin-left: -3.5em; */
-    display: none;
-  }
-  .description {
-    max-width: 80vw;
-  }
-}
-
-@media only screen and (min-height: 750px) and (max-height: 900px) {
-  .container {
-    top: 16vh;
-  }
-  .containerP {
-    top: 20vh;
-  }
-  .hr {
-    margin-top: 0.8em;
-  }
-}
-
-@media only screen and (max-height: 749.9px) {
-  .container {
-    top: 12vh;
-  }
-  .containerP {
-    top: 16vh;
-  }
-  .hr {
-    margin-top: 0.8em;
-  }
-  .project {
-    padding: 0.5em;
-  }
 }

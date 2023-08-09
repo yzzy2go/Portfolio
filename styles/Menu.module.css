@@ -12,14 +12,7 @@
   background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
-}
-
-.overlaycontent {
-  color: #ffffff;
-  position: relative;
-  top: 25%;
-  text-align: center;
-  margin-top: 30px;
+  animation: fadeIn 0.5s;
 }
 
 .page:hover {
@@ -27,14 +20,11 @@
   font-size: 4rem;
 }
 
-@media only screen and (min-height: 700px) and (max-height: 900px) {
-  .overlaycontent {
-    top: 18%;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-}
-
-@media only screen and (max-height: 699.9px) {
-  .overlaycontent {
-    top: 10%;
+  100% {
+    opacity: 1;
   }
 }
