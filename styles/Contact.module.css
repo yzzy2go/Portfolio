@@ -19,7 +19,7 @@
   color: goldenrod;
 }
 
-@media (max-width: 600px) and (max-height: 900px) {
+@media ((max-width: 600px) and (max-height: 900px)) or (max-height: 500px) {
   .container {
     padding-top: 0em;
   }

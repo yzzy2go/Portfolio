@@ -24,7 +24,7 @@ export default function Contact() {
             sx={{ textAlign: "left" }}
             className={styles.container}
           >
-            <h1>Contact</h1>
+            <h1 style={{ marginTop: "2em" }}>Contact</h1>
             <hr className={styles.hr} />
             <Grid container spacing={4} sx={{ alignItems: "end" }}>
               <Grid item sm={12} md={2}>
