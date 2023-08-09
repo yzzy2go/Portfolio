@@ -23,7 +23,7 @@ export default function Home() {
           direction="column"
           alignItems="center"
           justifyContent="center"
-          sx={{ minHeight: "100vh", margin: "0px 2em" }}
+          sx={{ minHeight: "100vh" }}
         >
           <Grid item xs={12}>
             <h1 className={styles.title}>Yzabelle Go</h1>
