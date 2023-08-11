@@ -21,7 +21,7 @@
   text-align: right;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .type {
     text-align: left;
     padding-top: 6px;

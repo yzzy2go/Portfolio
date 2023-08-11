@@ -104,6 +104,16 @@ export default function Portfolio() {
               )}
               <hr className={styles.hr} />
               {renderProject(
+                "handwritingOCR",
+                `This aim of this Optical Character Recognition project was to be able to 
+                detect text from handwritten images. The final iteration was able to identify words with at most 
+                1 letter off. I worked with Tensorflow and Keras to import, clean, and prep the input data. 
+                I also had a role in creating the neural network and calculating accuracy.`,
+                "deep learning",
+                "https://github.com/yzzy2go/HandwritingOCR"
+              )}
+              <hr className={styles.hr} />
+              {renderProject(
                 "deliverydog",
                 `I created a simple WebGL infinite runner game using C# scripts, 
               rigidbody2D components, box colliders, triggers and animations.`,

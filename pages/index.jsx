@@ -40,17 +40,17 @@ export default function Home() {
             justifyContent="center"
             sx={{ marginTop: "2em", textAlign: "center" }}
           >
-            <Grid item xs={12} sm={1.5}>
+            <Grid item xs={12} sm={3} md={1.7}>
               <h2 className={styles.link}>
                 <Link href="/projects">Projects</Link>
               </h2>
             </Grid>
-            <Grid item xs={12} sm={1.5}>
+            <Grid item xs={12} sm={3} md={1.7}>
               <h2 className={styles.link}>
                 <Link href="/experience">Experience</Link>
               </h2>
             </Grid>
-            <Grid item xs={12} sm={1.5}>
+            <Grid item xs={12} sm={3} md={1.7}>
               <h2 className={styles.link}>
                 <Link href="/contact">Contact</Link>
               </h2>

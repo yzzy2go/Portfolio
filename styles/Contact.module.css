@@ -1,5 +1,6 @@
 .container {
   padding-top: 16em;
+  padding-bottom: 4em;
 }
 
 .email {
@@ -19,7 +20,7 @@
   color: goldenrod;
 }
 
-@media ((max-width: 600px) and (max-height: 900px)) or (max-height: 500px) {
+@media screen and (((max-width: 600px) and (max-height: 900px)) or (max-height: 650px)) {
   .container {
     padding-top: 0em;
   }
