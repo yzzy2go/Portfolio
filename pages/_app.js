@@ -20,10 +20,10 @@ export default function App({ Component, pageProps }) {
         ></script>
         <script>
           {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-MQ6FQTTWWQ');`}
+            gtag('config', 'G-MQ6FQTTWWQ');`}
         </script>
         <title>Yzabelle Go</title>
         <link rel="icon" href="/favicon.ico" />
