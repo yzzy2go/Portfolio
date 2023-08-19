@@ -28,8 +28,7 @@ export default function Home() {
           </Grid>
           <Grid item xs={12}>
             <p className={styles.description}>
-              Software engineer, frontend developer. Looking for full-time
-              opportunities.
+              {`Software engineer with a love for design. Currently seeking full-time opportunities!`}
             </p>
           </Grid>
 
